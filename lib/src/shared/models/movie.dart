@@ -1,3 +1,5 @@
+import 'package:disney_plus_replica/src/shared/converters/category_converter.dart';
+import 'package:disney_plus_replica/src/shared/converters/genre_converter.dart';
 import 'package:disney_plus_replica/src/shared/types/category_type.dart';
 import 'package:disney_plus_replica/src/shared/types/genre_type.dart';
 import 'package:disney_plus_replica/src/shared/types/rating_type.dart';
@@ -6,6 +8,8 @@ import 'package:json_annotation/json_annotation.dart';
 part 'movie.g.dart';
 
 @JsonSerializable()
+@CategoryConverter()
+@GenreConverter()
 class Movie {
   Movie(
     this.id,
@@ -23,7 +27,7 @@ class Movie {
     this.browseImagePath,
     this.selectedImagePath,
     this.continueImagePath,
-    this.highlighImagePath,
+    this.highlightImagePath,
   );
 
   @JsonKey(required: true)
@@ -58,18 +62,20 @@ class Movie {
   @JsonKey(required: true)
   final List<String> starring;
 
-  @JsonKey(required: true)
+  @JsonKey(required: true, name: 'logo_image_path')
   final String logoImagePath;
 
-  @JsonKey(required: true)
+  @JsonKey(required: true, name: 'browse_image_path')
   final String browseImagePath;
 
-  @JsonKey(required: true)
+  @JsonKey(required: true, name: 'selected_image_path')
   final String selectedImagePath;
 
+  @JsonKey(name: 'continue_image_path')
   final String? continueImagePath;
 
-  final String? highlighImagePath;
+  @JsonKey(name: 'highlight_image_path')
+  final String? highlightImagePath;
 
   factory Movie.fromJson(Map<String, dynamic> json) => _$MovieFromJson(json);
 

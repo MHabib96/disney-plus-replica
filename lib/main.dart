@@ -1,6 +1,10 @@
+import 'package:disney_plus_replica/bindings.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  configureServices();
+  await initialiseServices();
   runApp(const MyApp());
 }
 

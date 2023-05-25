@@ -1,10 +1,10 @@
 enum CategoryType {
-  disney('Disney'),
-  pixar('Pixar'),
-  marvel('Marvel'),
-  starWars('StarWars'),
-  nationalGeographic('NationalGeographic'),
-  star('Star');
+  disney('disney'),
+  pixar('pixar'),
+  marvel('marvel'),
+  starWars('star wars'),
+  nationalGeographic('national geographic'),
+  star('star');
 
   final String name;
 
