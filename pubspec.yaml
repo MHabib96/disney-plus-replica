@@ -26,6 +26,7 @@ flutter:
 
   assets:
     - assets/json/movies.json
+    - assets/images/logos/
     - assets/images/movies/avengers_endgame/
     - assets/images/movies/wanda_vision/
 

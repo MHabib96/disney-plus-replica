@@ -1,4 +1,5 @@
 import 'package:disney_plus_replica/bindings.dart';
+import 'package:disney_plus_replica/src/modules/base/screens/navigator_base.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
@@ -14,11 +15,22 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Disney Plus',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        textTheme: const TextTheme(
+          bodyMedium: TextStyle(color: Colors.white),
+        ),
+        scaffoldBackgroundColor: const Color.fromRGBO(54, 69, 79, 0.2),
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          type: BottomNavigationBarType.fixed,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.blueGrey,
+          backgroundColor: Color.fromRGBO(54, 69, 79, 0.3),
+        ),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: NavigatorBase(),
     );
   }
 }

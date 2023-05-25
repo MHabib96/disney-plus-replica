@@ -1,0 +1,4 @@
+enum TabType {
+  home,
+  search,
+}
