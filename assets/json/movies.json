@@ -1,0 +1,34 @@
+{
+    "movies": [
+        {
+            "id": "05773775-1f71-4771-9bfb-547bfc9c5540",
+            "title": "Avengers: EndGame",
+            "category": "Marvel",
+            "duration": 184,
+            "watched": 152,
+            "release_date": "2019-04-25",
+            "rating": "Twelve",
+            "description": "The epic finale to the Infinity Sage, this dramatic showdown pits the Avengers against Thanos.",
+            "is_premier": false,
+            "genres": [
+                "ScienceFiction",
+                "Fantasy",
+                "SuperHero",
+                "ActionAdventure"
+            ],
+            "starring": [
+                "Robert Downey Jr.",
+                "Chris Hemsworth",
+                "Mark Ruffalo",
+                "Chris Evans",
+                "Scarlett Johansson",
+                "Jeremy Renner"
+            ],
+            "logo_image_path": "assets/images/movies/avengers_endgame/logo.jpg",
+            "browse_image_path": "assets/images/movies/avengers_endgame/browse.jpg",
+            "selected_image_path": "assets/images/movies/avengers_endgame/selected.jpg",
+            "continue_image_path": "assets/images/movies/avengers_endgame/continue.jpg",
+            "highlight_image_path": null
+        }
+    ]   
+}
