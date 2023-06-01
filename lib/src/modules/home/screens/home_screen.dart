@@ -29,6 +29,7 @@ class HomeScreen extends StatelessWidget {
         ];
       },
       body: ListView(
+        padding: const EdgeInsets.only(top: 5),
         physics: const BouncingScrollPhysics(),
         children: [
           HighlightCarousel(

@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Color.fromRGBO(54, 69, 79, 0.3),
         ),
       ),
+      debugShowCheckedModeBanner: false,
       home: const NavigatorBase(),
     );
   }

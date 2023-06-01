@@ -18,7 +18,6 @@ class SliverHomeAppBar extends SliverPersistentHeaderDelegate {
 
   double _getHeaderOpacity(double shrinkOffset, double maxExtent) {
     var opacity = 1.0;
-    //shrinkOffset * 2 makes header fade twice as fast.
     if (shrinkOffset != maxExtent) {
       opacity = (1 - (shrinkOffset * 2) / maxExtent);
     }
