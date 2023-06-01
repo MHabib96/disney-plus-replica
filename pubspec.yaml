@@ -19,7 +19,7 @@ dev_dependencies:
   build_runner: ^2.4.4
   get_it: ^7.6.0
   json_serializable: ^6.7.0
-
+  carousel_slider: ^4.2.1
 
 flutter:
   uses-material-design: true
@@ -27,7 +27,11 @@ flutter:
   assets:
     - assets/json/movies.json
     - assets/images/logos/
+    - assets/images/movies/avengers/
+    - assets/images/movies/avengers_age_of_ultron/
+    - assets/images/movies/avengers_infinity_war/
     - assets/images/movies/avengers_endgame/
+    - assets/images/movies/shang_chi_legend_of_the_ten_rings/
     - assets/images/movies/wanda_vision/
 
   # fonts:

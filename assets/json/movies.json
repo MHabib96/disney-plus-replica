@@ -1,6 +1,37 @@
 {
     "movies": [
         {
+            "id": "ba51b1d8-a826-4ba5-b820-34f11b6ba1df",
+            "title": "Avengers",
+            "category": "marvel",
+            "duration": 145,
+            "watched": 0,
+
+            "release_date": "2012-04-26",
+            "rating": "twelve",
+            "description": "Nick Fury recruits a team of heroes to battle an unexpected enemy.",
+            "is_premier": false,
+            "genres": [
+                "Science Fiction",
+                "Fantasy",
+                "Super Hero",
+                "Action-Adventure"
+            ],
+            "starring": [
+                "Robert Downey Jr.",
+                "Chris Hemsworth",
+                "Mark Ruffalo",
+                "Chris Evans",
+                "Scarlett Johansson",
+                "Jeremy Renner"
+            ],
+            "logo_image_path": "assets/images/movies/avengers/logo.png",
+            "browse_image_path": "assets/images/movies/avengers/browse.jpg",
+            "selected_image_path": "assets/images/movies/avengers/selected.jpg",
+            "continue_image_path": null,
+            "highlight_image_path": null
+        },
+        {
             "id": "05773775-1f71-4771-9bfb-547bfc9c5540",
             "title": "Avengers: EndGame",
             "category": "marvel",
@@ -24,11 +55,40 @@
                 "Scarlett Johansson",
                 "Jeremy Renner"
             ],
-            "logo_image_path": "assets/images/movies/avengers_endgame/logo.jpg",
+            "logo_image_path": "assets/images/movies/avengers_endgame/logo.png",
             "browse_image_path": "assets/images/movies/avengers_endgame/browse.jpg",
             "selected_image_path": "assets/images/movies/avengers_endgame/selected.jpg",
             "continue_image_path": "assets/images/movies/avengers_endgame/continue.jpg",
             "highlight_image_path": null
+        },
+        {
+            "id": "cfd0ee62-16c9-4c5d-ae8d-5e7f258f6f0c",
+            "title": "Shang Chi and the Legend of the Ten Rings",
+            "category": "marvel",
+            "duration": 154,
+            "watched": 40,
+            "release_date": "2021-09-02",
+            "rating": "twelve",
+            "description": "Shang-Chi must confront his father, leader of the Ten Rings organization",
+            "is_premier": false,
+            "genres": [
+                "Fantasy",
+                "Super Hero",
+                "Action-Adventure"
+            ],
+            "starring": [
+                "Simu Liu",
+                "Awkwafina",
+                "Tony Leung",
+                "Michelle Yeoh",
+                "Meng'er Zhang",
+                "Ben Kingsley"
+            ],
+            "logo_image_path": "assets/images/movies/shang_chi_legend_of_the_ten_rings/logo.png",
+            "browse_image_path": "assets/images/movies/shang_chi_legend_of_the_ten_rings/browse.jpg",
+            "selected_image_path": "assets/images/movies/shang_chi_legend_of_the_ten_rings/selected.jpg",
+            "continue_image_path": "assets/images/movies/shang_chi_legend_of_the_ten_rings/continue.jpg",
+            "highlight_image_path": "assets/images/movies/shang_chi_legend_of_the_ten_rings/highlight.jpg"
         }
     ]   
 }

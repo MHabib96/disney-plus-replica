@@ -7,6 +7,13 @@ class MovieRepository implements IMovieRepository {
   List<Movie> _movies = [];
 
   @override
+  List<Movie> getAll() => _movies;
+
+  @override
+  List<Movie> getWithHighlights() =>
+      _movies.where((element) => element.highlightImagePath != null).toList();
+
+  @override
   Future<void> initialise() async {
     if (_movies.isNotEmpty) _movies.clear();
     _movies = await services.get<IJsonService>().getMovies();

@@ -1,12 +1,13 @@
 import 'package:disney_plus_replica/bindings.dart';
 import 'package:disney_plus_replica/src/modules/home/slivers/sliver_home_app_bar.dart';
 import 'package:disney_plus_replica/src/shared/interfaces/i_movie_repository.dart';
+import 'package:disney_plus_replica/src/shared/widgets/highlight_carousel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   final _scrollController = ScrollController();
-  //final _movieRepository = services.get<IMovieRepository>();
+  final _movieRepository = services.get<IMovieRepository>();
 
   HomeScreen({super.key});
 
@@ -27,7 +28,14 @@ class HomeScreen extends StatelessWidget {
           ),
         ];
       },
-      body: ListView(),
+      body: ListView(
+        physics: const BouncingScrollPhysics(),
+        children: [
+          HighlightCarousel(
+            movies: _movieRepository.getWithHighlights(),
+          )
+        ],
+      ),
     );
   }
 }
