@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         textTheme: const TextTheme(
           bodyMedium: TextStyle(color: Colors.white),
         ),
-        scaffoldBackgroundColor: const Color.fromRGBO(54, 69, 79, 0.2),
+        scaffoldBackgroundColor: Colors.transparent,
         bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           type: BottomNavigationBarType.fixed,
           showSelectedLabels: false,
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Color.fromRGBO(54, 69, 79, 0.3),
         ),
       ),
-      home: NavigatorBase(),
+      home: const NavigatorBase(),
     );
   }
 }

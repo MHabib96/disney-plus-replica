@@ -46,20 +46,35 @@ class _NavigatorBaseState extends State<NavigatorBase> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async => !await _navigatorKeys[_currentTab]!.currentState!.maybePop(),
-      child: Scaffold(
-        body: Stack(
-          children: [
-            _buildOffstageNavigator(TabType.home),
-            _buildOffstageNavigator(TabType.search),
-          ],
+      child: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.bottomLeft,
+            end: Alignment.topRight,
+            stops: [0.1, 0.5, 0.7, 0.9],
+            colors: [
+              Color.fromARGB(255, 21, 25, 37),
+              Color.fromARGB(255, 37, 39, 54),
+              Color.fromARGB(255, 42, 45, 64),
+              Color.fromARGB(255, 40, 43, 62),
+            ],
+          ),
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _currentIndex,
-          onTap: (index) => _onSelectedTab(TabType.values[index]),
-          items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-          ],
+        child: Scaffold(
+          body: Stack(
+            children: [
+              _buildOffstageNavigator(TabType.home),
+              _buildOffstageNavigator(TabType.search),
+            ],
+          ),
+          bottomNavigationBar: BottomNavigationBar(
+            currentIndex: _currentIndex,
+            onTap: (index) => _onSelectedTab(TabType.values[index]),
+            items: const [
+              BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+              BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+            ],
+          ),
         ),
       ),
     );
