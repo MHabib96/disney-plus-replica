@@ -1,6 +1,36 @@
 {
     "movies": [
         {
+            "id": "33fea52a-6c31-4ef1-9eea-8dad3ca2ed25",
+            "title": "Lion King",
+            "category": "disney",
+            "duration": 93,
+            "watched": 0,
+            "release_date": "1994-10-07",
+            "rating": "six",
+            "description": "A cub who can't wait to be king finds his place in the Circle of Life.",
+            "is_premier": false,
+            "genres": [
+                "Family",
+                "Animation",
+                "Action-Adventure",
+                "Musical"
+            ],
+            "starring": [
+                "Jonathan Taylor Thomas",
+                "Mathew Broderick",
+                "James Earl Jones",
+                "Jeremy Irons",
+                "Moira Kelly",
+                "Niketa Calame"
+            ],
+            "logo_image_path": "assets/images/movies/lion_king/logo.png",
+            "browse_image_path": "assets/images/movies/lion_king/browse.jpg",
+            "selected_image_path": "assets/images/movies/lion_king/selected.jpg",
+            "continue_image_path": null,
+            "highlight_image_path": null
+        },
+        {
             "id": "e87038ff-55f5-4f4f-8c1d-a97b342c1814",
             "title": "Aladdin",
             "category": "disney",
