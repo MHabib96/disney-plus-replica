@@ -1,6 +1,37 @@
 {
     "movies": [
         {
+            "id": "e87038ff-55f5-4f4f-8c1d-a97b342c1814",
+            "title": "Aladdin",
+            "category": "disney",
+            "duration": 94,
+            "watched": 0,
+            "release_date": "1993-04-23",
+            "rating": "six",
+            "description": "Aladdin, Pincess Jasmine and Genie join forces to stop evil Jafar",
+            "is_premier": false,
+            "genres": [
+                "Family",
+                "Fantasy",
+                "Animation",
+                "Action-Adventure",
+                "Musical"
+            ],
+            "starring": [
+                "Scott Weinger",
+                "Rovin Williams",
+                "Linda Larkin",
+                "Jonathan Freeman",
+                "Scarlett Johansson",
+                "Gilbert Gottfried"
+            ],
+            "logo_image_path": "assets/images/movies/aladdin/logo.png",
+            "browse_image_path": "assets/images/movies/aladdin/browse.jpg",
+            "selected_image_path": "assets/images/movies/aladdin/selected.jpg",
+            "continue_image_path": null,
+            "highlight_image_path": null
+        },
+        {
             "id": "ba51b1d8-a826-4ba5-b820-34f11b6ba1df",
             "title": "Avengers",
             "category": "marvel",
@@ -56,6 +87,36 @@
             "logo_image_path": "assets/images/movies/avengers_age_of_ultron/logo.png",
             "browse_image_path": "assets/images/movies/avengers_age_of_ultron/browse.jpg",
             "selected_image_path": "assets/images/movies/avengers_age_of_ultron/selected.jpg",
+            "continue_image_path": null,
+            "highlight_image_path": null
+        },
+        {
+            "id": "46b2d6d6-cdf9-4335-a8b7-b3bea9062de8",
+            "title": "Avengers: Infinity War",
+            "category": "marvel",
+            "duration": 152,
+            "watched": 0,
+            "release_date": "2018-04-26",
+            "rating": "twelve",
+            "description": "The Avengers must be willing to sacrifice all to defat Thanos",
+            "is_premier": false,
+            "genres": [
+                "Science Fiction",
+                "Fantasy",
+                "Super Hero",
+                "Action-Adventure"
+            ],
+            "starring": [
+                "Robert Downey Jr.",
+                "Chris Hemsworth",
+                "Mark Ruffalo",
+                "Chris Evans",
+                "Scarlett Johansson",
+                "Jeremy Renner"
+            ],
+            "logo_image_path": "assets/images/movies/avengers_infinity_war/logo.png",
+            "browse_image_path": "assets/images/movies/avengers_infinity_war/browse.jpg",
+            "selected_image_path": "assets/images/movies/avengers_infinity_war/selected.jpg",
             "continue_image_path": null,
             "highlight_image_path": null
         },
@@ -117,6 +178,127 @@
             "selected_image_path": "assets/images/movies/shang_chi_legend_of_the_ten_rings/selected.jpg",
             "continue_image_path": "assets/images/movies/shang_chi_legend_of_the_ten_rings/continue.jpg",
             "highlight_image_path": "assets/images/movies/shang_chi_legend_of_the_ten_rings/highlight.jpg"
+        },
+        {
+            "id": "33c4105d-22a3-4c0e-a0c7-1176348506b9",
+            "title": "Wanda Vision",
+            "category": "marvel",
+            "duration": 23,
+            "watched": 0,
+            "release_date": "2021-01-15",
+            "rating": "twelve",
+            "description": "Two super-powered beings living idealized suburban lives suspect that everything is not as it seems.",
+            "is_premier": false,
+            "genres": [
+                "Romance",
+                "Drama",
+                "Science Fiction",
+                "Fantasy",
+                "Super Hero"
+            ],
+            "starring": [
+                "Elizabeth Olsen",
+                "Paul Bettany",
+                "Teyonah Parris",
+                "Kathryn Hahn",
+                "Randall Park",
+                "Kat Dennings"
+            ],
+            "logo_image_path": "assets/images/movies/wanda_vision/logo.png",
+            "browse_image_path": "assets/images/movies/wanda_vision/browse.jpg",
+            "selected_image_path": "assets/images/movies/wanda_vision/selected.jpg",
+            "continue_image_path": null,
+            "highlight_image_path": null
+        },
+        {
+            "id": "aeaeeb8f-1f71-434b-90b5-7ebc9572df7b",
+            "title": "Big Hero 6",
+            "category": "disney",
+            "duration": 108,
+            "watched": 0,
+            "release_date": "2014-01-30",
+            "rating": "six",
+            "description": "A boy genius and his robot team up to save their city.",
+            "is_premier": false,
+            "genres": [
+                "Science Fiction",
+                "Family",
+                "Animation",
+                "Super Hero",
+                "Action-Adventure"
+            ],
+            "starring": [
+                "Scott Adsit",
+                "Ryan Potter",
+                "Daniel Henney",
+                "T.J. Miller",
+                "Jamie Chung",
+                "Damon Wayans Jr."
+            ],
+            "logo_image_path": "assets/images/movies/big_hero_six/logo.png",
+            "browse_image_path": "assets/images/movies/big_hero_six/browse.jpg",
+            "selected_image_path": "assets/images/movies/big_hero_six/selected.jpg",
+            "continue_image_path": null,
+            "highlight_image_path": null
+        },
+        {
+            "id": "1254d5f7-01aa-4d7e-a173-177e79061ed0",
+            "title": "Black Panther Wakanda Forever",
+            "category": "marvel",
+            "duration": 163,
+            "watched": 0,
+            "release_date": "2022-11-11",
+            "rating": "twelve",
+            "description": "The Wakandans fight to protect the nation from intervening powers following King T'Challa's death",
+            "is_premier": false,
+            "genres": [
+                "Science Fiction",
+                "Super Hero",
+                "Action-Adventure"
+            ],
+            "starring": [
+                "Letitia Wright",
+                "Lupita Nyong'o",
+                "Danai Gurira",
+                "Angela Bassett",
+                "Winston Duke",
+                "Tenoch Huerta"
+            ],
+            "logo_image_path": "assets/images/movies/black_panther_wakanda_forever/logo.png",
+            "browse_image_path": "assets/images/movies/black_panther_wakanda_forever/browse.jpg",
+            "selected_image_path": "assets/images/movies/black_panther_wakanda_forever/selected.jpg",
+            "continue_image_path": null,
+            "highlight_image_path": null
+        },
+        {
+            "id": "787cb22c-8a3e-49f3-bbc4-5c0db16831e5",
+            "title": "Encanto",
+            "category": "disney",
+            "duration": 112,
+            "watched": 0,
+            "release_date": "2021-11-24",
+            "rating": "six",
+            "description": "Mirabel discovers she may be the key to saving the magic that surrounds her extraordinary family",
+            "is_premier": false,
+            "genres": [
+                "Family",
+                "Fantasy",
+                "Animation",
+                "Musical"
+            ],
+            "starring": [
+                "Stephanie Beatriz",
+                "Maria Cecilia Botero",
+                "John Leguizamo",
+                "Mauro Castillo",
+                "Jessica Darrow",
+                "Angie Cepeda"
+            ],
+            "logo_image_path": "assets/images/movies/encanto/logo.png",
+            "browse_image_path": "assets/images/movies/encanto/browse.jpg",
+            "selected_image_path": "assets/images/movies/encanto/selected.jpg",
+            "continue_image_path": null,
+            "highlight_image_path": "assets/images/movies/encanto/highlight.jpg"
         }
     ]   
 }

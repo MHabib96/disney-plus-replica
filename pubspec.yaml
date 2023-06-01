@@ -28,11 +28,21 @@ flutter:
     - assets/json/movies.json
     - assets/images/logos/
     - assets/images/category_logos/
+    - assets/images/movies/aladdin/
     - assets/images/movies/avengers/
     - assets/images/movies/avengers_age_of_ultron/
     - assets/images/movies/avengers_infinity_war/
     - assets/images/movies/avengers_endgame/
+    - assets/images/movies/big_hero_six/
     - assets/images/movies/shang_chi_legend_of_the_ten_rings/
+    - assets/images/movies/black_panther_wakanda_forever/
+    - assets/images/movies/encanto/
+    - assets/images/movies/lion_king/
+    - assets/images/movies/mulan/
+    - assets/images/movies/peter_pan/
+    - assets/images/movies/robin_hood/
+    - assets/images/movies/tarzan/
+    - assets/images/movies/thor_ragnarok/
     - assets/images/movies/wanda_vision/
 
   # fonts:

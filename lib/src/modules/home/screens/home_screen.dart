@@ -1,6 +1,7 @@
 import 'package:disney_plus_replica/bindings.dart';
 import 'package:disney_plus_replica/src/modules/home/slivers/sliver_home_app_bar.dart';
 import 'package:disney_plus_replica/src/shared/interfaces/i_movie_repository.dart';
+import 'package:disney_plus_replica/src/shared/types/category_type.dart';
 import 'package:disney_plus_replica/src/shared/widgets/category_buttons.dart';
 import 'package:disney_plus_replica/src/shared/widgets/highlight_carousel.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_list_view.dart';
@@ -43,9 +44,14 @@ class HomeScreen extends StatelessWidget {
             child: CategoryButtons(),
           ),
           MovieListView(
-            label: 'Movies',
+            label: 'Marvel',
             movieHeight: movieListViewHeight,
-            movies: _movieRepository.getAll(),
+            movies: _movieRepository.getByCategory(CategoryType.marvel),
+          ),
+          MovieListView(
+            label: 'Disney',
+            movieHeight: movieListViewHeight,
+            movies: _movieRepository.getByCategory(CategoryType.disney),
           )
         ],
       ),
