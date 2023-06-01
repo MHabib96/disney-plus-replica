@@ -27,6 +27,7 @@ flutter:
   assets:
     - assets/json/movies.json
     - assets/images/logos/
+    - assets/images/category_logos/
     - assets/images/movies/avengers/
     - assets/images/movies/avengers_age_of_ultron/
     - assets/images/movies/avengers_infinity_war/
