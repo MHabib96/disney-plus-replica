@@ -1,5 +1,6 @@
 import 'package:disney_plus_replica/src/modules/base/types/tab_type.dart';
-import 'package:disney_plus_replica/src/modules/home/screens/home_screen.dart';
+import 'package:disney_plus_replica/src/shared/routing/route_handlers.dart';
+import 'package:disney_plus_replica/src/shared/routing/routes.dart';
 import 'package:flutter/material.dart';
 
 class TabNavigator extends StatelessWidget {
@@ -14,22 +15,24 @@ class TabNavigator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Widget child;
+    String initialRoute;
+    Route<dynamic> Function(RouteSettings) generateRoute;
 
     switch (tab) {
       case TabType.home:
-        child = HomeScreen();
+        initialRoute = HomeRoutes.home.route;
+        generateRoute = HomeRouteHandler.generateRoute;
         break;
       case TabType.search:
-        child = const Text('Search');
+        initialRoute = HomeRoutes.home.route;
+        generateRoute = HomeRouteHandler.generateRoute;
         break;
     }
 
     return Navigator(
       key: navigatorKey,
-      onGenerateRoute: (settings) {
-        return MaterialPageRoute(builder: (context) => child);
-      },
+      initialRoute: initialRoute,
+      onGenerateRoute: generateRoute,
     );
   }
 }

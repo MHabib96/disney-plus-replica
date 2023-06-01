@@ -1,4 +1,6 @@
+import 'package:disney_plus_replica/src/modules/movie/view_models/movie_view_model.dart';
 import 'package:disney_plus_replica/src/shared/models/movie.dart';
+import 'package:disney_plus_replica/src/shared/routing/routes.dart';
 import 'package:flutter/material.dart';
 
 class MovieListView extends StatelessWidget {
@@ -38,7 +40,11 @@ class MovieListView extends StatelessWidget {
               separatorBuilder: (context, index) => const Divider(indent: 8),
               itemBuilder: (context, index) {
                 return GestureDetector(
-                  onTap: () => print('Navigate to movie: ${movies[index].title}'),
+                  onTap: () => Navigator.pushNamed(
+                    context,
+                    HomeRoutes.movie.route,
+                    arguments: MovieViewModel(movie: movies[index]),
+                  ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8),
                     child: Image.asset(movies[index].browseImagePath),
