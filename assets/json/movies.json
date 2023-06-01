@@ -6,7 +6,6 @@
             "category": "marvel",
             "duration": 145,
             "watched": 0,
-
             "release_date": "2012-04-26",
             "rating": "twelve",
             "description": "Nick Fury recruits a team of heroes to battle an unexpected enemy.",
@@ -28,6 +27,35 @@
             "logo_image_path": "assets/images/movies/avengers/logo.png",
             "browse_image_path": "assets/images/movies/avengers/browse.jpg",
             "selected_image_path": "assets/images/movies/avengers/selected.jpg",
+            "continue_image_path": null,
+            "highlight_image_path": null
+        },
+        {
+            "id": "ba51b1d8-a826-4ba5-b820-34f11b6ba1df",
+            "title": "Avengers: Age of Ultron",
+            "category": "marvel",
+            "duration": 143,
+            "watched": 0,
+            "release_date": "2015-04-23",
+            "rating": "twelve",
+            "description": "Tony Stark unwittingly creates an A.I. monster bent on destroying mankind",
+            "is_premier": false,
+            "genres": [
+                "Science Fiction",
+                "Super Hero",
+                "Action-Adventure"
+            ],
+            "starring": [
+                "Robert Downey Jr.",
+                "Chris Hemsworth",
+                "Mark Ruffalo",
+                "Chris Evans",
+                "Scarlett Johansson",
+                "Jeremy Renner"
+            ],
+            "logo_image_path": "assets/images/movies/avengers_age_of_ultron/logo.png",
+            "browse_image_path": "assets/images/movies/avengers_age_of_ultron/browse.jpg",
+            "selected_image_path": "assets/images/movies/avengers_age_of_ultron/selected.jpg",
             "continue_image_path": null,
             "highlight_image_path": null
         },
