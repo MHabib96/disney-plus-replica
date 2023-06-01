@@ -18,7 +18,7 @@ class TabNavigator extends StatelessWidget {
 
     switch (tab) {
       case TabType.home:
-        child = const HomeScreen();
+        child = HomeScreen();
         break;
       case TabType.search:
         child = const Text('Search');
