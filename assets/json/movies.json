@@ -329,6 +329,35 @@
             "selected_image_path": "assets/images/movies/encanto/selected.jpg",
             "continue_image_path": null,
             "highlight_image_path": "assets/images/movies/encanto/highlight.jpg"
+        },
+        {
+            "id": "1ef1d58c-6ada-44cc-9a27-f8f26301164f",
+            "title": "Tarzan",
+            "category": "disney",
+            "duration": 96,
+            "watched": 0,
+            "release_date": "1999-10-22",
+            "rating": "six",
+            "description": "Adopted by gorillas, Tarzan's life changes forever when he meets other humans.",
+            "is_premier": false,
+            "genres": [
+                "Family",
+                "Action-Adventure",
+                "Animation"
+            ],
+            "starring": [
+                "Tony Goldwyn",
+                "Minnie Driver",
+                "Glenn Close",
+                "Alex D. Linz",
+                "Rosie O'Donnell",
+                "Brian Blessed"
+            ],
+            "logo_image_path": "assets/images/movies/tarzan/logo.png",
+            "browse_image_path": "assets/images/movies/tarzan/browse.jpg",
+            "selected_image_path": "assets/images/movies/tarzan/selected.jpg",
+            "continue_image_path": null,
+            "highlight_image_path": null
         }
     ]   
 }
