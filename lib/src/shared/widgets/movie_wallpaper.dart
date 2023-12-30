@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-//Extend height of widget to keep it alive when scrolling in ListView.
-const double _bottomOffest = -80.0;
+const double _logoOffset = -80.0;
 
 class MovieWallpaper extends StatelessWidget {
   final String logoImagePath;
@@ -16,14 +15,16 @@ class MovieWallpaper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(bottom: 0),
-      //padding: EdgeInsets.only(bottom: _bottomOffest.abs()),
+      padding: EdgeInsets.only(bottom: _logoOffset.abs()),
       child: Stack(
         clipBehavior: Clip.none,
         alignment: AlignmentDirectional.bottomCenter,
         children: [
           _Background(backgroundImagePath: backgroundImagePath),
-          _Logo(imagePath: logoImagePath),
+          Positioned(
+            bottom: -80,
+            child: Image.asset(logoImagePath, height: 120),
+          ),
         ],
       ),
     );
@@ -39,10 +40,10 @@ class _Background extends StatelessWidget {
   Widget build(BuildContext context) {
     return ShaderMask(
       shaderCallback: (rect) {
-        return const LinearGradient(
+        return LinearGradient(
           begin: Alignment.center,
           end: Alignment.bottomCenter,
-          colors: [Colors.black, Colors.transparent],
+          colors: [Colors.black, Colors.black.withOpacity(0.5), Colors.transparent],
         ).createShader(Rect.fromLTRB(0, 0, rect.width, rect.height));
       },
       blendMode: BlendMode.dstIn,
@@ -56,20 +57,6 @@ class _Background extends StatelessWidget {
           fit: BoxFit.cover,
         ),
       ),
-    );
-  }
-}
-
-class _Logo extends StatelessWidget {
-  final String imagePath;
-
-  const _Logo({required this.imagePath});
-
-  @override
-  Widget build(BuildContext context) {
-    return Positioned(
-      bottom: _bottomOffest,
-      child: Image.asset(imagePath, height: 120),
     );
   }
 }
