@@ -1,4 +1,5 @@
 import 'package:disney_plus_replica/src/modules/movie/view_models/movie_view_model.dart';
+import 'package:disney_plus_replica/src/shared/widgets/movie_play_button_with_status.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_runtime_information.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_streaming_information.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_wallpaper.dart';
@@ -52,6 +53,11 @@ class MovieScreen extends StatelessWidget {
                     releaseDate: viewModel.movie.releaseDate,
                     duration: viewModel.movie.duration,
                     genres: viewModel.movie.genres,
+                  ),
+                  const SizedBox(height: 10),
+                  MoviePlayButtonWithStatus(
+                    duration: viewModel.movie.duration,
+                    watched: viewModel.movie.watched,
                   ),
                 ],
               ),
