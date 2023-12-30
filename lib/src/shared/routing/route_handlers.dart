@@ -8,13 +8,15 @@ import 'package:flutter/material.dart';
 class HomeRouteHandler {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     var route = settings.name?.toRouteEnum<HomeRoutes>(HomeRoutes.values);
-    var viewModel = settings.arguments;
+    var arguments = settings.arguments;
     switch (route) {
       case HomeRoutes.home:
         return MaterialPageRoute(builder: (_) => HomeScreen());
       case HomeRoutes.movie:
-        if (viewModel is! MovieViewModel) continue error;
-        return MaterialPageRoute(builder: (_) => MovieScreen(viewModel: viewModel));
+        if (arguments is! MovieViewModel) continue error;
+        return MaterialPageRoute(
+          builder: (_) => MovieScreen(viewModel: arguments),
+        );
       error:
       default:
         return _errorRoute<HomeRoutes>(route);

@@ -5,5 +5,6 @@ abstract class IMovieRepository {
   List<Movie> getAll();
   List<Movie> getByCategory(CategoryType category);
   List<Movie> getWithHighlights();
+  List<Movie> getSuggestedMovies(Movie movie, int count);
   Future<void> initialise();
 }

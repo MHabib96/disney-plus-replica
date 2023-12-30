@@ -14,7 +14,7 @@ class MovieUtilityButtons extends StatelessWidget {
           startIcon: Icons.add,
           endIcon: Icons.check,
           beginRotation: 0.5,
-          padding: EdgeInsets.all(5),
+          padding: 2,
           duration: Duration(milliseconds: 500),
         ),
         _UtilityButton(
@@ -40,10 +40,8 @@ class _UtilityButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Padding(
-          padding: const EdgeInsets.all(5),
-          child: Icon(icon, size: 26, color: Colors.white),
-        ),
+        Icon(icon, size: 26, color: Colors.white),
+        const SizedBox(height: 2),
         Text(
           label,
           style: const TextStyle(fontSize: 12),

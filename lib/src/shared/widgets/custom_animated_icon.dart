@@ -12,7 +12,7 @@ class CustomAnimatedIcon extends StatefulWidget {
   final double? beginRotation;
   final double? endRotation;
   final bool? startInReverse;
-  final EdgeInsets? padding;
+  final double? padding;
   final String? label;
   final double? labelSize;
   final Function()? startIconOnTap;
@@ -29,7 +29,7 @@ class CustomAnimatedIcon extends StatefulWidget {
     this.iconSize = 26.0,
     this.beginRotation = 0.0,
     this.endRotation = 1.0,
-    this.padding = EdgeInsets.zero,
+    this.padding = 0.0,
     this.label,
     this.labelSize = 12.0,
     this.startIconOnTap,
@@ -127,14 +127,12 @@ class _CustomAnimatedIconState extends State<CustomAnimatedIcon>
               begin: _beginRotation,
               end: _endRotation,
             ).animate(_curvedAnimation),
-            child: Padding(
-              padding: widget.padding!,
-              child: AnimatedSwitcher(
-                duration: widget.duration,
-                child: _selectedWidget,
-              ),
+            child: AnimatedSwitcher(
+              duration: widget.duration,
+              child: _selectedWidget,
             ),
           ),
+          SizedBox(height: widget.padding),
           if (widget.label != null) ...[
             Text(
               widget.label!,

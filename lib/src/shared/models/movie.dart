@@ -7,9 +7,9 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'movie.g.dart';
 
-@JsonSerializable()
-@CategoryConverter()
-@GenreConverter()
+//@JsonSerializable()
+//@CategoryConverter()
+//@GenreConverter()
 class Movie {
   Movie(
     this.id,

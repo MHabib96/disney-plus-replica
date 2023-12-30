@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
-    final appBarHeight = (14 / 100) * screenHeight;
+    final appBarHeight = (13 / 100) * screenHeight;
     final movieListViewHeight = (18 / 100) * screenHeight;
     return NestedScrollView(
       controller: _scrollController,

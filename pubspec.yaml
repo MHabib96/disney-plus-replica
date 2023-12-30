@@ -20,6 +20,7 @@ dev_dependencies:
   get_it: ^7.6.0
   json_serializable: ^6.7.0
   carousel_slider: ^4.2.1
+  equatable: ^2.0.5
 
 flutter:
   uses-material-design: true

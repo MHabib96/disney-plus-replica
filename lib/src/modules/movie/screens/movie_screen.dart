@@ -1,15 +1,20 @@
+import 'package:disney_plus_replica/bindings.dart';
 import 'package:disney_plus_replica/src/modules/movie/view_models/movie_view_model.dart';
+import 'package:disney_plus_replica/src/shared/interfaces/i_movie_repository.dart';
+import 'package:disney_plus_replica/src/shared/routing/routes.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_play_button_with_status.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_runtime_information.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_streaming_information.dart';
+import 'package:disney_plus_replica/src/shared/widgets/movie_tabs.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_utility_buttons/movie_utility_buttons.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_wallpaper.dart';
 import 'package:flutter/material.dart';
 
 class MovieScreen extends StatelessWidget {
-  const MovieScreen({super.key, required this.viewModel});
+  MovieScreen({super.key, required this.viewModel});
 
   final MovieViewModel viewModel;
+  final _movieRepository = services.get<IMovieRepository>();
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +54,7 @@ class MovieScreen extends StatelessWidget {
                   MovieStreamingInformation(
                     rating: viewModel.movie.rating.name,
                   ),
-                  const SizedBox(height: 2),
+                  const SizedBox(height: 4),
                   MovieRuntimeInformation(
                     releaseDate: viewModel.movie.releaseDate,
                     duration: viewModel.movie.duration,
@@ -60,11 +65,17 @@ class MovieScreen extends StatelessWidget {
                     duration: viewModel.movie.duration,
                     watched: viewModel.movie.watched,
                   ),
+                  const SizedBox(height: 10),
                   const MovieUtilityButtons(),
                   const SizedBox(height: 15),
                   Text(
                     viewModel.movie.description,
                     style: const TextStyle(fontSize: 14),
+                  ),
+                  const SizedBox(height: 30),
+                  MovieTabs(
+                    selectedMovie: viewModel.movie,
+                    suggestedMovies: _movieRepository.getSuggestedMovies(viewModel.movie, 6),
                   ),
                 ],
               ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const double _logoOffset = -80.0;
+const double _logoOffset = -50.0;
 
 class MovieWallpaper extends StatelessWidget {
   final String logoImagePath;
@@ -22,8 +22,8 @@ class MovieWallpaper extends StatelessWidget {
         children: [
           _Background(backgroundImagePath: backgroundImagePath),
           Positioned(
-            bottom: -80,
-            child: Image.asset(logoImagePath, height: 120),
+            bottom: _logoOffset,
+            child: Image.asset(logoImagePath, scale: 7),
           ),
         ],
       ),

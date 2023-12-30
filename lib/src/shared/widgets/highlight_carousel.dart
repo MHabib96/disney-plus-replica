@@ -14,7 +14,7 @@ class HighlightCarousel extends StatelessWidget {
   Widget build(BuildContext context) {
     return CarouselSlider(
       options: CarouselOptions(
-        //aspectRatio: 4 / 2,
+        aspectRatio: 4 / 2,
         viewportFraction: 0.95,
         enlargeCenterPage: true,
         autoPlay: true,

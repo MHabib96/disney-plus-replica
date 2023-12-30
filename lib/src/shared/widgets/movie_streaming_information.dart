@@ -12,8 +12,8 @@ class MovieStreamingInformation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 80),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Wrap(
+        spacing: 4,
         children: [
           _InformationContainer(label: rating),
           const _InformationContainer(label: 'HD'),
@@ -39,12 +39,12 @@ class _InformationContainer extends StatelessWidget {
         color: Colors.grey.shade700,
         borderRadius: const BorderRadius.all(Radius.circular(3)),
       ),
-      padding: const EdgeInsets.all(2.0),
+      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
       child: Text(
         label,
         style: TextStyle(
           color: Colors.white,
-          fontSize: 12,
+          fontSize: 10,
           fontWeight: FontWeight.bold,
           backgroundColor: Colors.grey.shade700,
         ),
