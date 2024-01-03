@@ -41,6 +41,11 @@ class MovieRepository implements IMovieRepository {
   }
 
   @override
+  List<Movie> getContinueWatching() {
+    return _movies.where((x) => x.watched != 0).toList();
+  }
+
+  @override
   Future<void> initialise() async {
     if (_movies.isNotEmpty) _movies.clear();
     _movies = await services.get<IJsonService>().getMovies();

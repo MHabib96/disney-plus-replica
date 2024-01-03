@@ -27,7 +27,7 @@ class MovieWatchStatusBar extends StatelessWidget {
             Container(
               height: _height,
               decoration: BoxDecoration(
-                color: Colors.grey.shade800,
+                color: Colors.grey.shade300.withOpacity(0.6),
                 borderRadius: BorderRadius.circular(10),
               ),
             ),

@@ -1,4 +1,6 @@
+import 'package:disney_plus_replica/src/modules/movie/view_models/movie_view_model.dart';
 import 'package:disney_plus_replica/src/shared/models/movie.dart';
+import 'package:disney_plus_replica/src/shared/routing/routes.dart';
 import 'package:flutter/widgets.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
@@ -15,7 +17,7 @@ class HighlightCarousel extends StatelessWidget {
     return CarouselSlider(
       options: CarouselOptions(
         aspectRatio: 4 / 2,
-        viewportFraction: 0.95,
+        viewportFraction: 0.92,
         enlargeCenterPage: true,
         autoPlay: true,
         autoPlayInterval: const Duration(seconds: 8),
@@ -40,7 +42,11 @@ class _CarouselSlide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => print(movie.title),
+      onTap: () => Navigator.pushNamed(
+        context,
+        HomeRoutes.movie.route,
+        arguments: MovieViewModel(movie: movie),
+      ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(8),
         child: Stack(

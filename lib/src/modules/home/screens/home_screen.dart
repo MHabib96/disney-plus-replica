@@ -4,15 +4,19 @@ import 'package:disney_plus_replica/src/shared/interfaces/i_movie_repository.dar
 import 'package:disney_plus_replica/src/shared/types/category_type.dart';
 import 'package:disney_plus_replica/src/shared/widgets/category_buttons.dart';
 import 'package:disney_plus_replica/src/shared/widgets/highlight_carousel.dart';
+import 'package:disney_plus_replica/src/shared/widgets/movie_continue_list_view/movie_continue_list_view.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_list_view.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
+  HomeScreen({super.key});
+
+  final _verticalSpacing = 15.0;
+  final _horizontalSpacing = 20.0;
   final _scrollController = ScrollController();
   final _movieRepository = services.get<IMovieRepository>();
-
-  HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,20 +43,27 @@ class HomeScreen extends StatelessWidget {
           HighlightCarousel(
             movies: _movieRepository.getWithHighlights(),
           ),
-          const Padding(
-            padding: EdgeInsets.all(20),
-            child: CategoryButtons(),
+          Padding(
+            padding: EdgeInsets.all(_horizontalSpacing),
+            child: const CategoryButtons(),
           ),
           MovieListView(
             label: 'Marvel',
             movieHeight: movieListViewHeight,
             movies: _movieRepository.getByCategory(CategoryType.marvel),
           ),
+          SizedBox(height: _verticalSpacing),
           MovieListView(
             label: 'Disney',
             movieHeight: movieListViewHeight,
             movies: _movieRepository.getByCategory(CategoryType.disney),
-          )
+          ),
+          SizedBox(height: _verticalSpacing),
+          MovieContinueListView(
+            //height: 150,
+            movies: _movieRepository.getContinueWatching(),
+          ),
+          SizedBox(height: _verticalSpacing),
         ],
       ),
     );

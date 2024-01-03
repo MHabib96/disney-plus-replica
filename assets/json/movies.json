@@ -121,6 +121,36 @@
             "highlight_image_path": null
         },
         {
+            "id": "5efbae6a-549b-4fed-8b12-b11e934ba657",
+            "title": "Raya",
+            "category": "disney",
+            "duration": 115,
+            "watched": 30,
+            "release_date": "2021-03-05",
+            "rating": "six",
+            "description": "Long ago, humans and dragons lived together harmonsiously in the world of Kumandra.",
+            "is_premier": false,
+            "genres": [
+                "Family",
+                "Family",
+                "Animation",
+                "Action-Adventure"
+            ],
+            "starring": [
+                "Kelly Marie Tran",
+                "Awkwafina",
+                "Izaac Wang",
+                "Gemma Chan",
+                "Daniel Dae Kim",
+                "Benedict Wong"
+            ],
+            "logo_image_path": "assets/images/movies/raya/logo.png",
+            "browse_image_path": "assets/images/movies/raya/browse.PNG",
+            "selected_image_path": "assets/images/movies/raya/selected.jpg",
+            "continue_image_path": "assets/images/movies/raya/continue.jpg",
+            "highlight_image_path": null
+        },
+        {
             "id": "46b2d6d6-cdf9-4335-a8b7-b3bea9062de8",
             "title": "Avengers: Infinity War",
             "category": "marvel",
@@ -234,7 +264,7 @@
                 "Randall Park",
                 "Kat Dennings"
             ],
-            "logo_image_path": "assets/images/movies/wanda_vision/logo.jpg",
+            "logo_image_path": "assets/images/movies/wanda_vision/logo.png",
             "browse_image_path": "assets/images/movies/wanda_vision/browse.jpg",
             "selected_image_path": "assets/images/movies/wanda_vision/selected.jpg",
             "continue_image_path": null,
@@ -356,6 +386,122 @@
             "logo_image_path": "assets/images/movies/tarzan/logo.png",
             "browse_image_path": "assets/images/movies/tarzan/browse.jpg",
             "selected_image_path": "assets/images/movies/tarzan/selected.jpg",
+            "continue_image_path": null,
+            "highlight_image_path": null
+        },
+        {
+            "id": "c9903e05-3e6a-4243-91de-30cf937512d7",
+            "title": "Frozen",
+            "category": "disney",
+            "duration": 104,
+            "watched": 0,
+            "release_date": "2013-12-06",
+            "rating": "six",
+            "description": "Anna and Kristoff brave the elements, racing to save Elsa and the Kingdom.",
+            "is_premier": false,
+            "genres": [
+                "Family",
+                "Fantasy",
+                "Animation"
+            ],
+            "starring": [
+                "Kristen Bell",
+                "Idina Menzel",
+                "Jonathan Groff",
+                "Josh Gad",
+                "Santino Fontana",
+                "Alan Tudyk"
+            ],
+            "logo_image_path": "assets/images/movies/frozen/logo.png",
+            "browse_image_path": "assets/images/movies/frozen/browse.jpg",
+            "selected_image_path": "assets/images/movies/frozen/selected.jpg",
+            "continue_image_path": null,
+            "highlight_image_path": null
+        },
+        {
+            "id": "44a30bee-276b-4245-87b0-6aebc22dd21f",
+            "title": "Mulan",
+            "category": "disney",
+            "duration": 96,
+            "watched": 0,
+            "release_date": "1998-10-16",
+            "rating": "six",
+            "description": "A girl hides her identity to take her father's place in the Imperial Army.",
+            "is_premier": false,
+            "genres": [
+                "Family",
+                "Musical",
+                "Animation"
+            ],
+            "starring": [
+                "Ming-Na Wen",
+                "Lea Salonga",
+                "Soon-Tek Oh",
+                "B.D Wong",
+                "Donny Osmond",
+                "Freda Foh Shen"
+            ],
+            "logo_image_path": "assets/images/movies/mulan/logo.png",
+            "browse_image_path": "assets/images/movies/mulan/browse.jpg",
+            "selected_image_path": "assets/images/movies/mulan/selected.jpg",
+            "continue_image_path": null,
+            "highlight_image_path": null
+        },
+        {
+            "id": "bcb163bd-b806-4ce2-9630-fb65e80956a8",
+            "title": "Thor Ragnarok",
+            "category": "marvel",
+            "duration": 132,
+            "watched": 0,
+            "release_date": "2017-10-03",
+            "rating": "twelve",
+            "description": "Thor races against time to ensure that Asgard does not fall into the Hela's ruthless hands.",
+            "is_premier": false,
+            "genres": [
+                "Action-Adventure",
+                "Science Fiction",
+                "Super Hero"
+            ],
+            "starring": [
+                "Chris Hemsworth",
+                "Tom Hiddleston",
+                "Cate Blanchett",
+                "Idris Elba",
+                "Jeff Goldblum",
+                "Tessa Thompson"
+            ],
+            "logo_image_path": "assets/images/movies/thor_ragnarok/logo.png",
+            "browse_image_path": "assets/images/movies/thor_ragnarok/browse.jpg",
+            "selected_image_path": "assets/images/movies/thor_ragnarok/selected.jpg",
+            "continue_image_path": null,
+            "highlight_image_path": null
+        },
+        {
+            "id": "6619f693-242a-4e4a-9be1-95596f4e3e2e",
+            "title": "Robin Hood",
+            "category": "disney",
+            "duration": 85,
+            "watched": 0,
+            "release_date": "1973-10-08",
+            "rating": "six",
+            "description": "The story of England's legendary hero is retold in Disney's animated classic.",
+            "is_premier": false,
+            "genres": [
+                "Family",
+                "Animation",
+                "Action-Adventure"
+            ],
+            "starring": [
+                "Roger Miller",
+                "Peter Ustinov",
+                "Terry-Thomas",
+                "Brian Bedford",
+                "Monica Evans",
+                "Phil Harris"
+            ],
+            "logo_image_path": "assets/images/movies/robin_hood/logo.png",
+            "browse_image_path": "assets/images/movies/robin_hood/browse.jpg",
+            "selected_image_path": "assets/images/movies/robin_hood/selected.jpg",
             "continue_image_path": null,
             "highlight_image_path": null
         }

@@ -6,7 +6,7 @@ import 'package:disney_plus_replica/src/shared/widgets/movie_play_button_with_st
 import 'package:disney_plus_replica/src/shared/widgets/movie_runtime_information.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_streaming_information.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_tabs.dart';
-import 'package:disney_plus_replica/src/shared/widgets/movie_utility_buttons/movie_utility_buttons.dart';
+import 'package:disney_plus_replica/src/shared/widgets/movie_utility_buttons.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_wallpaper.dart';
 import 'package:flutter/material.dart';
 
