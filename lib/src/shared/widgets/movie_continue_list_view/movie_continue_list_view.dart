@@ -1,9 +1,6 @@
 import 'package:disney_plus_replica/src/shared/models/movie.dart';
-import 'package:disney_plus_replica/src/shared/utilities/widget_size.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_watch_status_bar.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 part 'movie_continue_card.dart';
 

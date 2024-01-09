@@ -1,7 +1,6 @@
 import 'package:disney_plus_replica/bindings.dart';
 import 'package:disney_plus_replica/src/modules/movie/view_models/movie_view_model.dart';
 import 'package:disney_plus_replica/src/shared/interfaces/i_movie_repository.dart';
-import 'package:disney_plus_replica/src/shared/routing/routes.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_play_button_with_status.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_runtime_information.dart';
 import 'package:disney_plus_replica/src/shared/widgets/movie_streaming_information.dart';
