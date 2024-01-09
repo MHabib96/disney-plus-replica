@@ -60,7 +60,6 @@ class HomeScreen extends StatelessWidget {
           ),
           SizedBox(height: _verticalSpacing),
           MovieContinueListView(
-            //height: 150,
             movies: _movieRepository.getContinueWatching(),
           ),
           SizedBox(height: _verticalSpacing),

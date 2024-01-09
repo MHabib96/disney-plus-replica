@@ -26,6 +26,7 @@ class MoviePlayButtonWithStatus extends StatelessWidget {
                 child: MovieWatchStatusBar(
                   duration: duration,
                   watched: watched,
+                  height: 5,
                 ),
               ),
               const SizedBox(width: 10),
