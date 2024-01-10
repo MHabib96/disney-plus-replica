@@ -1,16 +1,17 @@
-# disney_plus_replica
+# Disney Plus Replica
 
-A new Flutter project.
+A design replication of Disney's streaming mobile application developed using Dart and Flutter. This application is cross platform and compatible with both Android and iOS.
 
-## Getting Started
+## Overview
 
-This project is a starting point for a Flutter application.
+<img src="../disney_plus_replica/assets/images/readme/home_screen_top.PNG" width="300">
+&ensp;
+&ensp;
+<img src="../disney_plus_replica/assets/images/readme/home_screen_bottom.PNG" width="300">
 
-A few resources to get you started if this is your first Flutter project:
+<br/>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="../disney_plus_replica/assets/images/readme/movie_screen_continue.PNG" width="300">
+&ensp;
+&ensp;
+<img src="../disney_plus_replica/assets/images/readme/movie_screen_unwatched.PNG" width="300">
