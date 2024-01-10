@@ -4,7 +4,7 @@ A design replication of Disney's streaming mobile application developed using Da
 
 ## Overview
 
-<img src="../disney_plus_replica/assets/images/readme/home_screen_top.PNG" width="300">
+<img src="assets/images/readme/home_screen_top.PNG" width="300">
 &ensp;
 &ensp;
 <img src="../disney_plus_replica/assets/images/readme/home_screen_bottom.PNG" width="300">
